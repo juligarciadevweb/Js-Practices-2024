@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <ul id="seleccionable">
+
+        </ul>
+        <script>
+            //Muestra con iteracion en html
+            const mostrar = ["Vicentico", "Arjona", "Airbag", "Calamaro"]
+            let texto = ''
+
+            for (let index = 0; index < mostrar.length; index++) {
+                texto += "<li>" + array[index] + "</li>"  //Entra en el bucle y va imprimiendo uno a uno 
+            }   
+
+            document.getElementById("seleccionable").innerHTML = texto
+        </script>   
+    </main>
+</body>
+</html>
