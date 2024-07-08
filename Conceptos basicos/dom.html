@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de SergieCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p id="seleccionable"></p>
+    <p id="wwe"></p>
+    <p id="no"></p>
+    <p id="out"></p>
+
+    <button onclick="mostrar()">Dame click para ver la fecha</button> 
+    <!--Le damos la funcion mostrar al onclick  y al hacer click la llama. 
+    EL nombre de la funcion debe estar bien escrito-->
+    <button onclick="wwe()">El proximo evento de wwe</button>
+    <button onmouseover="noClick()">No me clickees</button>
+    <!--En este caso se ejecuta la funcion sin necesidad de hacer click,
+    esto seria la escucha del evento y la llamada a la funcion cuando el mouse esta sobre el boton-->
+    <button onmouseout="out()">Cuando salgas</button>
+    <!--Cuando el mouse salga de boton se mostrara el mensaje-->
+
+    <script>
+        function mostrar(){
+        document.getElementById('seleccionable').innerHTML = Date()
+        //Lo seleccionara y escribira la fecha en el get element 
+        }
+
+    function wwe() {
+        document.getElementById('wwe').innerHTML = "El proximo evento es Money in the bank"    
+    }
+
+    function noClick() {
+        document.getElementById('no').innerHTML = "Ni tuviste que clickear"
+    }
+
+    function out() {
+        document.getElementById('out').innerHTML = "Saliste asi que me viste"
+    }
+    </script>
+</body>
+</html>
