@@ -1,0 +1,39 @@
+* {
+  background-color: black;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  color: #4a33a5;
+  font-family: Arial, sans-serif;
+  text-decoration: overline;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #c43838;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#mensaje {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#intentos {
+  color: white;
+}
